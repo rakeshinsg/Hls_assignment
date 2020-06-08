@@ -8,6 +8,6 @@ import com.rak.assignment.to.UserTo;
 @Component
 public class UserHelper {
 	public UserTo toUser(User user) {
-		return new UserTo(user.getUserName(), user.getPassword(), user.getRole());
+		return return user == null ? null :new UserTo(user.getUserName(), user.getPassword(), user.getRole());
 	}
 }
