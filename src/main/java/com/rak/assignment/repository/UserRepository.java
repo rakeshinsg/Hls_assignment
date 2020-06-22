@@ -8,4 +8,5 @@ import com.rak.assignment.domain.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 	public User getUserByUserNameAndPassword(String uname, String pwd);
+	public User getUserByUserName(String uname);
 }
